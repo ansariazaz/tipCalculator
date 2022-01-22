@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const hideError = ()=>{
         setTimeout(()=>{
             error.style.display="none";  
-        },3000)
+        },5000)
     }
 
     
@@ -20,6 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
            hideError();
         }else if(isNaN(bill)){
             error.innerHTML = "Please Enter a number";
+            error.style.display="block";
+            hideError();
+
+        }else if(bill<0){
+            error.innerHTML = "Please Enter Valid number";
             error.style.display="block";
             hideError();
         }else{
