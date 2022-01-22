@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Assets/index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="head">
+        <h1 class="calc">Tip Calculator</h1>
+      </div>
+      <div class="bill-cont">
+        <label for="">Bill Amount:</label>
+        <input type="text" class="bill" placeholder="Enter Bill Amount">
+      </div>
+      <div class="rate-cont">
+        <label for="">Rate Service:</label>
+        <select class="rate">
+            <option disabled selected value="0">--select an option--</option>
+            <option value="0.25">25% - Top Notch</option>
+            <option value="0.20">20% - Excellent</option>
+            <option value="0.15">15% - Good</option>
+            <option value="0.10">10% - Bad</option>
+            <option value="0.05">5% - Worst</option>
+        </select>
+      </div>
+      <div class="btn-cont">
+        <button class="btn">Calculate</button>
+        <button class="reset">Reset</button>
+      </div>
+      <p class="error">Please Enter Bill Amount and Rate Service</p>
+      <div class="display-cont">
+        <div class="tip-display">
+          <label for="">Tip Amount:</label>
+          <span class="tip">0</span>
+        </div>
+        <div class="total-display">
+          <label for="" class="total-bill">Total Bill:</label>
+          <span class="total">0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="./Assets/index.js"></script>
+</body>
+
+</html>
